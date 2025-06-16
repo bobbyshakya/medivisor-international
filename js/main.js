@@ -214,3 +214,143 @@ $(document).ready(function () {
     });
     setTimeout(openModal, 60000)
 });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    const tabContentHeading = document.querySelector('.tab-content-container h2'); // Select the heading to be updated
+
+    // Function to apply dynamic grid classes based on card count
+    const applyDynamicGrid = (panel) => {
+        // Clear any existing grid classes first
+        panel.classList.remove('grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'grid', 'justify-items-center', 'justify-items-start');
+
+        const cards = panel.querySelectorAll('.card-item');
+        const cardCount = cards.length;
+
+        panel.classList.add('grid'); // Ensure grid display for the panel
+
+        if (cardCount === 1) {
+            panel.classList.add('grid-cols-1', 'justify-items-center'); // Center single card
+            // For a single card, you might want to apply a max-width to the card itself for better aesthetics
+            // This would typically be done in CSS or by adding specific Tailwind classes to the single card item in HTML
+            // Example: cards[0].classList.add('max-w-xl'); if you wanted to control it via JS
+        } else if (cardCount >= 2) {
+            // For two or more, use 2 per row on medium screens and up
+            panel.classList.add('grid-cols-1', 'md:grid-cols-2', 'justify-items-start');
+        } else {
+            // Fallback for 0 cards, or other unexpected counts
+            panel.classList.add('grid-cols-1', 'justify-items-start');
+        }
+    };
+
+
+    // Function to activate a tab
+    const activateTab = (tabId) => {
+        // Deactivate all buttons
+        tabButtons.forEach(button => {
+            button.classList.remove('text-red-600', 'border-red-600');
+            button.classList.add('text-gray-600', 'border-transparent');
+            button.setAttribute('aria-selected', 'false');
+        });
+
+        // Deactivate all panels
+        tabPanels.forEach(panel => {
+            panel.classList.add('hidden');
+        });
+
+        // Activate the selected button
+        const activeButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+        const activePanel = document.getElementById(`panel-${tabId}`);
+
+        if (activeButton && activePanel) {
+            activeButton.classList.remove('text-gray-600', 'border-transparent');
+            activeButton.classList.add('text-red-600', 'border-red-600');
+            activeButton.setAttribute('aria-selected', 'true');
+
+            // Show the active panel
+            activePanel.classList.remove('hidden');
+
+            // Apply dynamic grid for the active panel
+            applyDynamicGrid(activePanel);
+
+            // Update the main heading based on the active tab
+            let newHeadingText = '';
+            switch (tabId) {
+                case 'hospital':
+                    newHeadingText = 'Where you are treated matters – we make no compromises.';
+                    break;
+                case 'emergency':
+                    newHeadingText = 'We don’t wait for help to arrive. We bring it to you.';
+                    break;
+                case 'care':
+                    newHeadingText = 'Care doesn’t end at the hospital door – it travels with the patient.';
+                    break;
+                case 'information':
+                    newHeadingText = 'Informed patients make safer choices.';
+                    break;
+                default:
+                    newHeadingText = 'Our Patient Safety Measures'; // Default heading
+            }
+            if (tabContentHeading) {
+                tabContentHeading.textContent = newHeadingText;
+            }
+        }
+    };
+
+    // Add click listeners to tab buttons
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tabId = button.dataset.tab;
+            activateTab(tabId);
+        });
+    });
+
+    // Activate the first tab by default on page load
+    if (tabButtons.length > 0) {
+        activateTab(tabButtons[0].dataset.tab);
+    }
+});
+
+    function showStep(stepNumber) {
+        // Hide all step content
+        document.querySelectorAll('.step-content').forEach(function (content) {
+            content.classList.add('hidden');
+        });
+
+        // Deactivate all step buttons
+        document.querySelectorAll('.step-btn').forEach(function (button) {
+            button.classList.remove('active-step-btn'); // Assuming 'active-step-btn' is your active class
+            button.classList.remove('border-[#E22026]'); // Remove active border
+            button.classList.remove('bg-[#E22026]/10'); // Remove active background
+            button.classList.add('border'); // Add default border
+            button.classList.add('hover:bg-[#E22026]/10'); // Add hover background
+            button.classList.add('text-gray-700'); // Set default text color
+            button.classList.remove('text-[#E22026]'); // Remove active text color
+        });
+
+        // Show the selected step content
+        document.getElementById('step-' + stepNumber).classList.remove('hidden');
+
+        // Activate the selected step button
+        const activeButton = document.getElementById('btn-' + stepNumber);
+        activeButton.classList.add('active-step-btn'); // Add active class
+        activeButton.classList.add('border-[#E22026]'); // Add active border
+        activeButton.classList.add('bg-[#E22026]/10'); // Add active background
+        activeButton.classList.remove('border'); // Remove default border
+        activeButton.classList.remove('hover:bg-[#E22026]/10'); // Remove hover background
+        activeButton.classList.remove('text-gray-700'); // Remove default text color
+        activeButton.classList.add('text-[#E22026]'); // Set active text color
+    }
+
+    // Function to handle the "Open Patient Workflow" button click
+    function openPatientWorkflow() {
+        // Replace 'your-workflow-url.html' with the actual URL of your patient workflow
+        window.open('./assets/patient-workflow.png', '_blank');
+    }
+
+    // Initialize by showing the first step and activating its button
+    document.addEventListener('DOMContentLoaded', function () {
+        showStep(1);
+    });
