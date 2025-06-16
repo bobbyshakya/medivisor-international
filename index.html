@@ -23,7 +23,15 @@
             y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "rwtnbm5e9n");
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5T2PKW42X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-F5T2PKW42X');
+    </script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://code.jquery.com" crossorigin>
@@ -149,7 +157,7 @@
                         <li
                             class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#E22026] to-[#E22026] after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
                             <a aria-label="Testimonials" class="hover:text-[#E22026] font-normal"
-                                href="#Testimonials">Testimonials</a>
+                                href="#testimonials">Testimonials</a>
                         </li>
                         <li
                             class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#E22026] to-[#E22026] after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
@@ -368,9 +376,9 @@
             </div>
         </div>
 
-        <section class="py-16 bg-lightGray overflow-hidden" id="Treatment">
+        <section class="md:py-16 py-0 bg-lightGray overflow-hidden" id="Treatment">
             <div class="container relative mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl my-10 font-bold text-center mb-12 text-darkText"> Our Key Treatments
+                <h2 class="text-3xl md:text-4xl my-10 font-bold text-center md:mb-12 mb-4 text-darkText"> Our Key Treatments
                 </h2>
 
 
@@ -1011,7 +1019,7 @@
                 </div>
             </div>
         </section>
-        <section class="px-4 md:py-20 py-10 bg-white" id="Stories">
+        <section class="px-4 md:py-20 py-10 bg-white" id="testimonials">
             <div class="container text-center mx-auto">
                 <div class="text-center">
                     <div
@@ -1054,15 +1062,15 @@
                                     <p class="text-sm text-gray-500">Cancer Treatment</p>
                                 </div>
                                 </img>
-                             </div>
-                           
+                            </div>
+
                             <div class="cursor-pointer flex items-center p-3 rounded-md border hover:bg-[#E22026]/10 transition group"
                                 onclick="changeVideo(this, 'KZDq1ICki0k', 'Cathy Koe from Solomon Islands')">
                                 <img class="w-24 h-16 object-cover rounded-md border" loading="lazy"
                                     src="https://img.youtube.com/vi/KZDq1ICki0k/hqdefault.jpg">
                                 <div class="ml-4">
                                     <p class="font-semibold text-gray-700 group-hover:text-black">Cathy Koe </p>
-                                    <p class="text-sm text-gray-500">  Mitral Valve Replacement</p>
+                                    <p class="text-sm text-gray-500"> Mitral Valve Replacement</p>
                                 </div>
                                 </img>
                             </div>
@@ -1161,11 +1169,8 @@
                         How it Works - Treatment Process
                     </h2>
                     <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-                        At Medivisor India Treatment, we ensure that your journey—from
-                        diagnosis to recovery—is smooth, transparent,
-                        and fully supported. Our team handles everything, so you can
-                        focus solely on getting better. Here's how the
-                        process works:
+                        Embarking on your medical journey in India with Medivisor India Treatment is a streamlined and
+                        supportive process. We guide you through each step, ensuring clarity and ease.
                     </p>
                 </div>
                 <div class="grid md:grid-cols-4 h-full gap-3 md:gap-6">
@@ -1176,29 +1181,30 @@
                         </h3>
                         <div class="md:space-y-2 grid md:grid-cols-1 grid-cols-2 gap-2 md:block">
                             <button
-                                class="step-btn flex items-center gap-2 w-full px-3 py-2 rounded-md border hover:bg-[#E22026]/10 text-base text-gray-700 font-medium transition"
+                                class="step-btn flex items-center gap-2 w-full px-0 py-2 rounded-md border hover:bg-[#E22026]/10 text-xs text-center justify-center md:text-base text-gray-700 font-medium transition"
                                 id="btn-1" onclick="showStep(1)">
                                 <i class="fa-solid hidden-icon fa-file-medical text-[#E22026]"></i>
                                 Get a Quote
                             </button>
                             <button
-                                class="step-btn flex items-center gap-2 w-full px-2 md:px-3 py-2 rounded-md border hover:bg-[#E22026]/10 text-base text-gray-700 font-medium transition"
+                                class="step-btn flex items-center gap-2 w-full px-2 md:px-0 py-2 rounded-md border hover:bg-[#E22026]/10 text-xs text-center justify-center md:text-base text-gray-700 font-medium transition"
                                 id="btn-2" onclick="showStep(2)">
                                 <i class="fa-solid hidden-icon fa-user-doctor text-[#E22026]"></i>
                                 Talk to the Doctor
                             </button>
                             <button
-                                class="step-btn flex items-center gap-2 w-full px-3 py-2 rounded-md border hover:bg-[#E22026]/10 text-base text-gray-700 font-medium transition"
+                                class="step-btn flex items-center gap-2 w-full px-0 py-2 rounded-md border hover:bg-[#E22026]/10 text-xs text-center justify-center md:text-base text-gray-700 font-medium transition"
                                 id="btn-3" onclick="showStep(3)">
                                 <i class="fa-solid hidden-icon fa-plane-departure text-[#E22026]"></i>
-                                Book a Ticket
+                                Share Visa Documents
                             </button>
                             <button
-                                class="step-btn flex items-center gap-2 w-full px-3 py-2 rounded-md border hover:bg-[#E22026]/10 text-base text-gray-700 font-medium transition"
+                                class="step-btn flex items-center gap-2 w-full px-0 py-2 rounded-md border hover:bg-[#E22026]/10 text-xs text-center justify-center md:text-base text-gray-700 font-medium transition"
                                 id="btn-4" onclick="showStep(4)">
                                 <i class="fa-solid hidden-icon fa-flag-checkered text-[#E22026]"></i>
-                                Fly to India
+                                Book & Fly
                             </button>
+
                         </div>
                     </div>
                     <div class="md:col-span-3 gap-4">
@@ -1213,17 +1219,26 @@
                                     1 of 4</span>
                             </div>
                             <p class="text-base text-gray-700 mb-3">
-                                Send us your <strong> medical reports</strong>, and we’ll
-                                share a <strong>detailed quotation</strong>
-                                that includes your treatment plan and <strong>estimated
-                                    total cost</strong>—covering medical care,
-                                travel, accommodation, and food.
+                                Send us your medical reports. We'll share a complete treatment plan with cost, including
+                                travel and stay.
                             </p>
+                            <div class="grid gap-3 md:grid-cols-2">
+                                <div class="bg-gray-50 p-3 border rounded-md">
+                                    <h5 class="font-medium text-gray-800 text-lg mb-1">Benefit</h5>
+                                    <p class="text-base text-gray-600">Receive a comprehensive treatment plan and cost
+                                        estimate.</p>
+                                </div>
+                                <div class="bg-gray-50 p-3 border rounded-md">
+                                    <h5 class="font-medium text-gray-800 text-lg mb-1">Outcome</h5>
+                                    <p class="text-base text-gray-600">Clear understanding of your medical journey and
+                                        expenses.</p>
+                                </div>
+                            </div>
                             <div class="mt-4">
                                 <button aria-label="Enquire Now"
-                                    class="bg-[#E22026] modal-open-btn border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center"
+                                    class="bg-[#E22026] modal-open-btn border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center"
                                     id="openModalBtn16" type="button">
-                                    Get a Quote
+                                    Get a Quotation
                                 </button>
                             </div>
                         </div>
@@ -1238,73 +1253,75 @@
                                     2 of 4</span>
                             </div>
                             <p class="text-base text-gray-700 mb-3">
-                                If you’d like to <strong>the treating doctor before
-                                    traveling</strong>, we’ll connect you directly with
-                                the appropriate specialist to discuss the treatment plan,
-                                clarify doubts, and understand expected
-                                outcomes.
+                                Need clarity? We'll connect you with the right specialist to discuss your treatment
+                                options.
                             </p>
-                            <div class="grid gap-3 grid-cols-2">
+                            <div class="grid gap-3 md:grid-cols-2">
                                 <div class="bg-gray-50 p-3 border rounded-md">
-                                    <h5 class="font-medium text-gray-800 text-lg mb-1">What
-                                        You Get
-                                    </h5>
-                                    <p class="text-base text-gray-600">Clarity on procedures,
-                                        timelines, and second opinions.
-                                    </p>
+                                    <h5 class="font-medium text-gray-800 text-lg mb-1">Benefits</h5>
+                                    <p class="text-base text-gray-600">Direct consultation with the treating doctor.</p>
                                 </div>
                                 <div class="bg-gray-50 p-3 border rounded-md">
-                                    <h5 class="font-medium text-gray-800 text-lg mb-1">Doctor's
-                                        Summary
-                                    </h5>
-                                    <p class="text-base text-gray-600">Detailed report with
-                                        treatment suggestions and answered FAQs.
-                                    </p>
+                                    <h5 class="font-medium text-gray-800 text-lg mb-1">Outcome</h5>
+                                    <p class="text-base text-gray-600">Clarity on procedures and expected outcomes.</p>
                                 </div>
-                                <div class="mt-4">
-                                    <button aria-label="Enquire Now"
-                                        class="bg-[#E22026] modal-open-btn border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center"
-                                        id="openModalBtn16-dup" type="button">
-                                        Enquire Now
-                                    </button>
-                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button aria-label="Enquire Now"
+                                    class="bg-[#E22026] modal-open-btn border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center"
+                                    id="openModalBtn16-dup" type="button">
+                                    Talk to the Doctor
+                                </button>
                             </div>
                         </div>
                         <div class="step-content h-full bg-white border border-gray-200 rounded-md shadow p-3 pt-3 md:p-6 hidden"
                             id="step-3">
                             <div class="flex items-center justify-between mb-3">
                                 <h4 class="text-lg font-semibold text-gray-800">
-                                    <i class="fa-solid fa-plane mr-1 text-[#E22026]"></i> Book
-                                    a Ticket
+                                    <i class="fa-solid fa-plane mr-1 text-[#E22026]"></i> Share Visa Documents
                                 </h4>
                                 <span class="text-xs bg-[#74BF44]/10 text-[#74BF44] px-2 py-1 rounded-full">Step
                                     3 of 4</span>
                             </div>
                             <p class="text-base text-gray-700 mb-3">
-                                Share your documents with us, and we’ll handle your
-                                <strong>visa processing</strong>. Once approved, you
-                                can book your flight—or let us book it for you. In some
-                                cases, especially where the medical condition
-                                requires, a “flying clearance” may be needed from the
-                                airline. Our travel partners can help arrange
-                                this.
+                                To process your visa quickly, please send us:
                             </p>
-                            <ul class="text-base text-gray-600 space-y-1">
-                                <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Medical visa
-                                    assistance
-                                </li>
-                                <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Flight
-                                    booking guidance
-                                </li>
-                                <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Checklist &
-                                    insurance support
-                                </li>
-                            </ul>
+                            <div class="grid gap-3 md:grid-cols-2">
+                                <div class="bg-gray-50 p-3 border rounded-md">
+                                    <h5 class="font-medium text-gray-800 text-base mb-1">Required Documents</h5>
+                                    <ul class="text-base text-gray-600 space-y-1">
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Passport copy
+                                        </li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>2x2 inch
+                                            photo
+                                        </li>
+                                        <li class="flex gap-x-1"><span
+                                                class="text-primary mr-2 font-bold">✓</span>e-Visa form <a
+                                                href="./assets/e-Visa Application Form.docx"
+                                                class="text-[#74BF44] underline"> Download </a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-3 border rounded-md">
+                                    <h5 class="font-medium text-gray-800 text-base mb-1">Our Assistance</h5>
+                                    <ul class="text-base text-gray-600 space-y-1">
+
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Visa within
+                                            24-72 Hours
+                                        </li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>
+                                            Zero Lodgement Fee
+                                        </li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Expert
+                                            document
+                                            guidance</li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="mt-4">
                                 <a href="https://wa.me/918340780250">
                                     <button
-                                        class="bg-[#E22026] border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center">
-                                        Confirm Your Booking
+                                        class="bg-[#E22026] border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center">
+                                        Share Documents
                                     </button>
                                 </a>
                             </div>
@@ -1314,53 +1331,55 @@
                             <div class="flex items-center justify-between mb-3">
                                 <h4 class="text-lg font-semibold text-gray-800">
                                     <i class="fa-solid fa-plane-arrival mr-1 text-[#E22026]"></i>
-                                    Fly to India
+                                    Book & Fly
                                 </h4>
                                 <span class="text-xs bg-[#74BF44]/10 text-[#74BF44] px-2 py-1 rounded-full">Step
                                     4 of 4</span>
                             </div>
                             <p class="text-base text-gray-700 mb-3">
-                                Upon arrival, we take care of everything—<strong>airport
-                                    pickup, hotel check-in, hospital visits, local
-                                    currency exchange, SIM cards, and more</strong>. A
-                                dedicated Medivisor staff member will be by your
-                                side to assist you throughout your medical stay in India.
+                                Book your flight (or we'll help). Once you land in India, we take care of the
+                                rest—airport pickup, hotel, hospital, SIM, currency exchange, and full assistance
+                                throughout.
                             </p>
-                            <div class="grid gap-3 grid-cols-2">
+                            <div class="grid gap-3 md:grid-cols-2">
                                 <div class="bg-gray-50 p-3 border rounded-md">
-                                    <h5 class="font-medium text-gray-800 text-base mb-1">Hospital
-                                        Support
-                                    </h5>
+                                    <h5 class="font-medium text-gray-800 text-base mb-1">Arrival Assistance</h5>
                                     <ul class="text-base text-gray-600 space-y-1">
-                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Pickup &
-                                            local SIM
-                                        </li>
-                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Hospital
-                                            admission
-                                        </li>
-                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Interpreter
-                                            services
-                                        </li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Airport
+                                            pickup</li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Hotel &
+                                            hospital arrangements</li>
                                     </ul>
                                 </div>
                                 <div class="bg-gray-50 p-3 border rounded-md">
-                                    <h5 class="font-medium text-gray-800 text-base mb-1">Stay &
-                                        Services
-                                    </h5>
+                                    <h5 class="font-medium text-gray-800 text-base mb-1">Ongoing Support</h5>
                                     <ul class="text-base text-gray-600 space-y-1">
-                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Hotel &
-                                            meals
-                                        </li>
-                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Currency
-                                            exchange
-                                        </li>
-                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Daily
-                                            coordination
-                                        </li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>SIM card &
+                                            currency exchange</li>
+                                        <li class="flex"><span class="text-primary mr-2 font-bold">✓</span>Dedicated
+                                            support throughout your stay</li>
                                     </ul>
                                 </div>
                             </div>
+                            <div class="flex gap-x-4">
+                                <div class="mt-4">
+                                    <button aria-label="Enquire Now"
+                                        class="bg-[#E22026] modal-open-btn border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out hover:bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center"
+                                        id="openModalBtn16-dup" type="button">
+                                        Know the Air Fare
+                                    </button>
+                                </div>
+                                <div class="mt-4">
+                                    <button aria-label="View Treatment Flow"
+                                        class="hover:bg-[#E22026] border border-red-200 text-white text-sm md:text-base font-medium px-4 py-2 rounded-md cursor-pointer transform transition-all duration-300 ease-in-out bg-[#74BF44] hover:bg-gradient-to-l hover:shadow-xl origin-center"
+                                        onclick="openPatientWorkflow()">
+                                        View Treatment Flow
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -1488,7 +1507,445 @@
                 </div>
             </div>
         </section>
+<section class="py-8 sm:py-12 md:py-16 bg-gray-50 overflow-hidden">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
+                Our Patient Safety Measures:
+                <span class="block text-base sm:text-lg text-red-600 mt-1 sm:mt-2">Your Well-being, Our Unwavering Promise</span>
+            </h2>
+            <p class="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-2">
+                At Medivisor, patient safety is not just a protocol - it's a promise. From the moment a patient
+                lands to the time they return home, we implement robust systems to ensure every step of their
+                medical journey is secure, medically sound, and immediately responsive.
+            </p>
+        </div>
 
+        <div class="bg-white rounded-lg shadow-xl p-4 sm:p-6 md:p-8">
+            <div class="flex flex-wrap justify-center border-b border-gray-200 mb-6 sm:mb-8" role="tablist">
+                <button class="tab-button py-2 px-3 sm:py-3 sm:px-6 text-sm sm:text-base md:text-lg font-semibold text-gray-600 hover:text-red-600 focus:outline-none transition-colors duration-200 ease-in-out
+                    border-b-2 sm:border-b-4 border-transparent hover:border-red-600 whitespace-nowrap" data-tab="vetting" role="tab"
+                    aria-selected="true" aria-controls="panel-vetting" id="tab-vetting">
+                    <i class="fas fa-certificate mr-1 sm:mr-2"></i> Accreditation
+                </button>
+                <button class="tab-button py-2 px-3 sm:py-3 sm:px-6 text-sm sm:text-base md:text-lg font-semibold text-gray-600 hover:text-red-600 focus:outline-none transition-colors duration-200 ease-in-out
+                    border-b-2 sm:border-b-4 border-transparent hover:border-red-600 whitespace-nowrap" data-tab="care" role="tab"
+                    aria-selected="false" aria-controls="panel-care" id="tab-care">
+                    <i class="fas fa-hands-helping mr-1 sm:mr-2"></i> Patient Care
+                </button>
+                <button class="tab-button py-2 px-3 sm:py-3 sm:px-6 text-sm sm:text-base md:text-lg font-semibold text-gray-600 hover:text-red-600 focus:outline-none transition-colors duration-200 ease-in-out
+                    border-b-2 sm:border-b-4 border-transparent hover:border-red-600 whitespace-nowrap" data-tab="medical" role="tab"
+                    aria-selected="false" aria-controls="panel-medical" id="tab-medical">
+                    <i class="fas fa-clipboard-check mr-1 sm:mr-2"></i> Medical Protocols
+                </button>
+                <button class="tab-button py-2 px-3 sm:py-3 sm:px-6 text-sm sm:text-base md:text-lg font-semibold text-gray-600 hover:text-red-600 focus:outline-none transition-colors duration-200 ease-in-out
+                    border-b-2 sm:border-b-4 border-transparent hover:border-red-600 whitespace-nowrap" data-tab="support" role="tab"
+                    aria-selected="false" aria-controls="panel-support" id="tab-support">
+                    <i class="fas fa-user-friends mr-1 sm:mr-2"></i> Patient Support
+                </button>
+            </div>
+
+            <div class="tab-content-container">
+
+                <div id="panel-vetting" class="tab-panel gap-6 sm:gap-8 hidden justify-items-center" role="tabpanel"
+                    aria-labelledby="tab-vetting">
+                    <div
+                        class="card-item w-full max-w-full lg:max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-hospital-alt text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Verified Hospitals & Trusted Doctors
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We work exclusively with JCI and NABH
+                            - accredited hospitals and board - certified doctors, carefully vetted for safety
+                            practices, ethical integrity, and clinical excellence. Every hospital and doctor we
+                            collaborate with is chosen based on proven track records and adherence to the high
+                            standards of patient care.</p>
+
+                        <div class="mt-6 w-full overflow-x-auto">
+                            <table class="table-auto w-full divide-y divide-gray-200 border border-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th scope="col"
+                                            class="px-4 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Hospital
+                                        </th>
+                                        <th scope="col"
+                                            class="px-4 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Doctors
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium text-gray-900 whitespace-normal">
+                                            Super-speciality
+                                        </td>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm text-gray-700 whitespace-normal">
+                                            Head of the department
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium text-gray-900 whitespace-normal">
+                                            JCI/AACI/NABH accredited
+                                        </td>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm text-gray-700 whitespace-normal">
+                                            10+ years of experience
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium text-gray-900 whitespace-normal">
+                                            More than 350 beds
+                                        </td>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm text-gray-700 whitespace-normal">
+                                            Minimum DNB/MCh qualification
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium text-gray-900 whitespace-normal">
+                                            Located in the main town city
+                                        </td>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm text-gray-700 whitespace-normal">
+                                            Strong communication skills
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium text-gray-900 whitespace-normal">
+                                            Equipped with latest tools and technologies, including robots, brain
+                                            suites, PET-CT, radiation machine, and so on.
+                                        </td>
+                                        <td class="px-4 py-3 sm:px-6 sm:py-4 text-sm text-gray-700 whitespace-normal">
+                                            Respect for and experience with international patients
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel-care" class="tab-panel gap-6 sm:gap-8 hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" role="tabpanel" aria-labelledby="tab-care">
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-ambulance text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Rapid Emergency Response</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We have developed a multi-layered
+                            emergency response system to act fast when it matters most:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">A dedicated Emergency SOS Group is created for each
+                                case on WhatsApp and Viber, including the patient, their attendant(s), and
+                                Medivisor team members. This group is monitored 24/7, and any emergency message
+                                or call receives instant attention.</li>
+                            <li class="mb-1 text-gray-700">All patient accommodations are arranged within a
+                                500-meter radius of both the treating hospital and the Medivisor Office-ensuring
+                                we can physically reach the patient in under 5 minutes during emergencies.</li>
+                            <li class="mb-1 text-gray-700">Our office is staffed with a paramedic team available
+                                round-the-clock, including at night. In situations where a hospital emergency
+                                team may take 20-30 minutes to respond, our team bridges the gap with swift,
+                                on-site care.</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-user-nurse text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Daily Nurse Visits to Patient
+                            Accommodations</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">A registered nurse visits patients
+                            daily at their hotel or apartment to:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Ensure medications are being taken as prescribed</li>
+                            <li class="mb-1 text-gray-700">Check vital signs (BP, temperature, oxygen levels)
+                            </li>
+                            <li class="mb-1 text-gray-700">Examine surgical sites for signs of infection</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base mt-2">If abnormal vitals or infection
+                            symptoms are found, they are immediately escalated to our medical team for urgent
+                            intervention.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-map-marker-alt text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Proximity to Care</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">All patient accommodations are
+                            arranged within a 500-meter radius of both the treating hospital and the Medivisor
+                            Office-ensuring we can physically reach the patient in under 5 minutes during
+                            emergencies. Our office is staffed with a paramedic team available round-the-clock,
+                            including at night. In situations where a hospital emergency team may take 20-30
+                            minutes to respond, our team bridges the gap with swift, on-site care.</p>
+                    </div>
+                </div>
+
+                <div id="panel-medical" class="tab-panel gap-6 sm:gap-8 hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" role="tabpanel"
+                    aria-labelledby="tab-medical">
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-stethoscope text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Continuous Medical Oversight</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">Our experienced in-house medical team
+                            supervises every case from start to finish-coordinating with treating doctors,
+                            reviewing reports, confirming prescriptions, and providing a second layer of
+                            clinical judgement to prevent medical errors and oversights.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-microscope text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Safe and Sensible Diagnostics</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">No test or procedures is done without
+                            clear clinical reasoning. We:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Confirm all investigations with the treating doctor
+                            </li>
+                            <li class="mb-1 text-gray-700">Avoid duplicate or unnecessary testing</li>
+                            <li class="mb-1 text-gray-700">Use certified private labs when appropriate labs when
+                                appropriate to maintain quality at lower cost</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-bed text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Optimized Admission and ICU Protocols
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We avoid unnecessary hospital
+                            admissions. All pre-operative evaluations are done on on OPD basis. ICU usage is
+                            restricted to actual medical need, and patients are transferred to wards as soon as
+                            clinically safe, limiting exposure to hospital-acquired infections and unnecessary
+                            costs.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-pills text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Medication Review and Verification
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">All prescriptions are cross-verified
+                            by our internal doctors to ensure:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Correct dosage</li>
+                            <li class="mb-1 text-gray-700">No harmful drug interactions</li>
+                            <li class="mb-1 text-gray-700">No over-prescription</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base mt-2">Medicines are checked for expiry
+                            and source, especially during hospital stays and after discharge.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-hands-wash text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Hygiene and Infection Control
+                            Vigilance</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We routinely check hospital infection
+                            control practices, including:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Sterilization procedures</li>
+                            <li class="mb-1 text-gray-700">Staff hygiene and PPE compliance</li>
+                            <li class="mb-1 text-gray-700">Cleanliness of patient rooms</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base mt-2">We also educate patients and
+                            attendants on hygiene practices they must follow during treatment.</p>
+                    </div>
+                </div>
+
+                <div id="panel-support" class="tab-panel gap-6 sm:gap-8 hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" role="tabpanel"
+                    aria-labelledby="tab-support">
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-chalkboard-teacher text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Patient Education & Informed
+                            Decision-Making</h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We believe that informed patients are
+                            safer patients. That's why we keep them and their families updated on:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Diagnosis and treatment options</li>
+                            <li class="mb-1 text-gray-700">Possible risks</li>
+                            <li class="mb-1 text-gray-700">Ongoing progress</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base mt-2">They ensures they can make
+                            confident and safe decisions at every step.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-heartbeat text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Post-Discharge Monitoring & Support
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">Patient safety doesn't end at
+                            discharge. We continue to provide:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Follow-up appointments</li>
+                            <li class="mb-1 text-gray-700">Medication guidance</li>
+                            <li class="mb-1 text-gray-700">Emergency support via the active SOS group and our
+                                24/7 paramedic team</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base mt-2">We remain connected with the
+                            patient for any post-treatment concern that may arise.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-file-medical text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Transparent Documentation and Records
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We maintain and share complete
+                            medical and financial records, including reports, prescriptions, and bills. This
+                            ensures clarity, accountability, and patient empowerment.</p>
+                    </div>
+
+                    <div
+                        class="card-item bg-white rounded-lg shadow-sm p-6 sm:p-8 flex flex-col items-start text-left
+                        transform hover:-translate-y-0 hover:shadow-md border border-gray-100 transition-all duration-300 ease-in-out">
+                        <div class="mb-3 sm:mb-4">
+                            <i class="fas fa-brain text-3xl sm:text-4xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Psychological and Emotional Wellbeing
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">We understand that being far from
+                            home for treatment can be emotionally overwhelming. Our team provides:</p>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-sm sm:text-base ml-4 mt-2">
+                            <li class="mb-1 text-gray-700">Compassionate, culturally sensitive care</li>
+                            <li class="mb-1 text-gray-700">Emotional support and reassurance</li>
+                            <li class="mb-1 text-gray-700">Mental health referrals when needed</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base mt-2">We ensure that patients feel
+                            safe, heard, and supported throughout their medical journey.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-12 sm:mt-16 text-center">
+            <p class="text-gray-700 text-lg sm:text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mx-auto px-2">
+                A System Built Around Safety
+            </p>
+            <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-1 sm:mt-2 max-w-2xl mx-auto px-2">
+                At Medivisor, we combine medical expertise, real-time responsiveness, and human compassion to
+                build a care system where safety in proactive, personal, and deeply embedded in every patient
+                experience.
+            </p>
+        </div>
+    </div>
+</section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                const tabPanels = document.querySelectorAll('.tab-panel');
+
+                // Function to apply dynamic grid classes based on card count
+                const applyDynamicGrid = (panel) => {
+                    // Clear any existing grid classes first
+                    panel.classList.remove('grid-cols-1', 'grid-cols-2', 'grid-cols-3', 'grid-cols-4', 'grid', 'justify-items-center', 'justify-items-start');
+
+                    const cards = panel.querySelectorAll('.card-item');
+                    const cardCount = cards.length;
+
+                    panel.classList.add('grid'); // Ensure grid display for the panel
+
+                    if (cardCount === 1) {
+                        panel.classList.add('grid-cols-1', 'justify-items-center'); // Center single card
+                    } else if (cardCount === 2) {
+                        panel.classList.add('grid-cols-1', 'md:grid-cols-2', 'justify-items-start'); // 50/50 on medium screens up
+                    } else if (cardCount === 3) {
+                        panel.classList.add('grid-cols-1', 'md:grid-cols-3', 'justify-items-start'); // 1/3 each on medium screens up
+                    } else if (cardCount >= 4) {
+                        // For 4 or more, use 2 per row
+                        panel.classList.add('grid-cols-1', 'md:grid-cols-2', 'justify-items-start');
+                    } else {
+                        // Fallback or handle cases with 0 cards if necessary
+                        panel.classList.add('grid-cols-1', 'justify-items-start');
+                    }
+
+                    // Adjust card width for single card in small screens as well
+                    if (cardCount === 1) {
+                        // The HTML already has `w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto` for single cards,
+                        // which provides a good visual balance without needing JS here.
+                        // We just ensure the parent grid context is `grid-cols-1` and `justify-items-center`.
+                    }
+                };
+
+
+                // Function to activate a tab
+                const activateTab = (tabId) => {
+                    // Deactivate all buttons
+                    tabButtons.forEach(button => {
+                        button.classList.remove('text-red-600', 'border-red-600');
+                        button.classList.add('text-gray-600', 'border-transparent');
+                        button.setAttribute('aria-selected', 'false');
+                    });
+
+                    // Deactivate all panels
+                    tabPanels.forEach(panel => {
+                        panel.classList.add('hidden');
+                    });
+
+                    // Activate the selected button
+                    const activeButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+                    const activePanel = document.getElementById(`panel-${tabId}`);
+
+                    if (activeButton && activePanel) {
+                        activeButton.classList.remove('text-gray-600', 'border-transparent');
+                        activeButton.classList.add('text-red-600', 'border-red-600');
+                        activeButton.setAttribute('aria-selected', 'true');
+
+                        // Show the active panel
+                        activePanel.classList.remove('hidden');
+
+                        // Apply dynamic grid for the active panel
+                        applyDynamicGrid(activePanel);
+                    }
+                };
+
+                // Add click listeners to tab buttons
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const tabId = button.dataset.tab;
+                        activateTab(tabId);
+                    });
+                });
+
+                // Activate the first tab by default on page load
+                if (tabButtons.length > 0) {
+                    activateTab(tabButtons[0].dataset.tab);
+                }
+            });
+        </script>
         <section class="overflow-hidden relative bg-white md:py-20 py-10 pb-16">
             <div class="container mx-auto relative px-4 md:px-8">
                 <div class="text-center mb-6 max-w-3xl mx-auto">
@@ -2144,7 +2601,8 @@
         </div>
     </div>
     <div class="fixed inset-0 z-50 bg-black/70 bg-opacity-60 hidden items-center justify-center px-4" id="contactModal">
-        <div class="bg-white shadow-sm max-h-[400px] max-h-[600px] overflow-x-auto w-full max-w-md text-center rounded-md shadow-sm relative p-8 fade-in">
+        <div
+            class="bg-white shadow-sm max-h-[400px] max-h-[600px] overflow-x-auto w-full max-w-md text-center rounded-md shadow-sm relative p-8 fade-in">
             <button aria-label="Close Modal"
                 class="absolute top-2 z-50 right-2 text-gray-400 hover:text-[#E22026] text-2xl focus:outline-none"
                 id="closeModalBtn">
