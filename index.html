@@ -2953,7 +2953,59 @@
         debugLog('Main contact form initialized', null, 'Main');
         debugLog('Modal contact form initialized', null, 'Modal');
     </script>
+ <script>
+            function showStep(stepNumber) {
+                // Hide all step content
+                document.querySelectorAll('.step-content').forEach(function (content) {
+                    content.classList.add('hidden');
+                });
 
+                // Deactivate all step buttons
+                document.querySelectorAll('.step-btn').forEach(function (button) {
+                    button.classList.remove('active-step-btn'); // Assuming 'active-step-btn' is your active class
+                    button.classList.remove('border-[#E22026]'); // Remove active border
+                    button.classList.remove('bg-[#E22026]/10'); // Remove active background
+                    button.classList.add('border'); // Add default border
+                    button.classList.add('hover:bg-[#E22026]/10'); // Add hover background
+                    button.classList.add('text-gray-700'); // Set default text color
+                    button.classList.remove('text-[#E22026]'); // Remove active text color
+                });
+
+                // Show the selected step content
+                document.getElementById('step-' + stepNumber).classList.remove('hidden');
+
+                // Activate the selected step button
+                const activeButton = document.getElementById('btn-' + stepNumber);
+                activeButton.classList.add('active-step-btn'); // Add active class
+                activeButton.classList.add('border-[#E22026]'); // Add active border
+                activeButton.classList.add('bg-[#E22026]/10'); // Add active background
+                activeButton.classList.remove('border'); // Remove default border
+                activeButton.classList.remove('hover:bg-[#E22026]/10'); // Remove hover background
+                activeButton.classList.remove('text-gray-700'); // Remove default text color
+                activeButton.classList.add('text-[#E22026]'); // Set active text color
+            }
+
+            // Function to handle the "Open Patient Workflow" button click
+            function openPatientWorkflow() {
+                // Replace 'your-workflow-url.html' with the actual URL of your patient workflow
+                window.open('./assets/patient-workflow.png', '_blank');
+            }
+
+            // Initialize by showing the first step and activating its button
+            document.addEventListener('DOMContentLoaded', function () {
+                showStep(1);
+            });
+        </script>
+
+        <style>
+            /* Add this to your CSS or a style block if not already present */
+            .active-step-btn {
+                /* Styles for the active button */
+                background-color: rgba(226, 32, 38, 0.1);
+                border-color: #E22026;
+                color: #E22026;
+            }
+        </style>
 </body>
 
 </html>
