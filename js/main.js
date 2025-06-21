@@ -212,7 +212,7 @@ $(document).ready(function () {
             closeModal()
         }
     });
-    setTimeout(openModal, 60000)
+    setTimeout(openModal, 600000)
 });
 
 
